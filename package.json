@@ -1,0 +1,23 @@
+{
+  "name": "learn_react",
+  "version": "1.0.0",
+  "description": "This is learn react starting ",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rishav2x/Learn_react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rishav2x/Learn_react/issues"
+  },
+  "homepage": "https://github.com/rishav2x/Learn_react#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  }
+}
