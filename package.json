@@ -2,7 +2,7 @@
   "name": "learn_react",
   "version": "1.0.0",
   "description": "This is learn react starting ",
-  "main": "App.js",
+  
   "scripts": {
     "test": "jest"
   },
