@@ -9,7 +9,6 @@ const Header = () => {
             className="logo"
             src="https://www.logodesign.net/logo/food-cloche-2836ld.png?nwm=1&nws=1&industry=food&sf="
             alt=""
-            
           />
         </div>
         <div className="nav-items">
