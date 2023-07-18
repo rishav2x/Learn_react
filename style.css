@@ -1,3 +1,22 @@
-#heading {
-    color: red;
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 200px;
+}
+
+.cart-logo {
+    width: 75px;
+    
+}
+
+.nav-items > ul {
+    display: flex;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
 }
