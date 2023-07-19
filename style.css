@@ -37,7 +37,7 @@
     margin: 5px;
     padding: 5px;
     width: 200px;
-    height: 300px;
+    
 }
 
 .res-card:hover {
@@ -50,5 +50,6 @@
 }
 
 .res-logo {
-    width: 100%;
+    width: 100%
+    
 }
