@@ -2111,110 +2111,7 @@ const resList = [
                 ]
                 
 
-const resObj =  {
-                    "info": {
-                      "id": "14780",
-                      "name": "Pizza Hut",
-                      "cloudinaryImageId": "2b4f62d606d1b2bfba9ba9e5386fabb7",
-                      "locality": "Global Highstreet Mall",
-                      "areaName": "Hinjawadi",
-                      "costForTwo": "₹350 for two",
-                      "cuisines": [
-                        "Pizzas"
-                      ],
-                      "avgRating": 3.6,
-                      "feeDetails": {
-                        "restaurantId": "14780",
-                        "fees": [
-                          {
-                            "name": "BASE_DISTANCE",
-                            "fee": 4000
-                          },
-                          {
-                            "name": "BASE_TIME"
-                          },
-                          {
-                            "name": "ANCILLARY_SURGE_FEE"
-                          }
-                        ],
-                        "totalFee": 4000
-                      },
-                      "parentId": "721",
-                      "avgRatingString": "3.6",
-                      "totalRatingsString": "5K+",
-                      "sla": {
-                        "deliveryTime": 25,
-                        "lastMileTravel": 1.8,
-                        "serviceability": "SERVICEABLE",
-                        "slaString": "25 mins",
-                        "lastMileTravelString": "1.8 km",
-                        "iconType": "ICON_TYPE_EMPTY"
-                      },
-                      "availability": {
-                        "nextCloseTime": "2023-07-20 01:00:00",
-                        "opened": true
-                      },
-                      "badges": {
-                        
-                      },
-                      "isOpen": true,
-                      "type": "F",
-                      "badgesV2": {
-                        "entityBadges": {
-                          "imageBased": {
-                            
-                          },
-                          "textBased": {
-                            
-                          },
-                          "textExtendedBadges": {
-                            
-                          }
-                        }
-                      },
-                      "aggregatedDiscountInfoV3": {
-                        "header": "50% OFF",
-                        "subHeader": "UPTO ₹100"
-                      },
-                      "orderabilityCommunication": {
-                        "title": {
-                          
-                        },
-                        "subTitle": {
-                          
-                        },
-                        "message": {
-                          
-                        },
-                        "customIcon": {
-                          
-                        }
-                      },
-                      "differentiatedUi": {
-                        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                        "differentiatedUiMediaDetails": {
-                          "mediaType": "ADS_MEDIA_ENUM_IMAGE",
-                          "lottie": {
-                            
-                          },
-                          "video": {
-                            
-                          }
-                        }
-                      },
-                      "reviewsSummary": {
-                        
-                      },
-                      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT"
-                    },
-                    "analytics": {
-                      
-                    },
-                    "cta": {
-                      "link": "https://www.swiggy.com/restaurants/pizza-hut-global-highstreet-mall-hinjawadi-pune-14780",
-                      "type": "WEBLINK"
-                    }
-                  };
+
 
 
 const Body = () => {
@@ -2222,25 +2119,10 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="res-container">
-        <ResturantCard resData={resList[0]} />
-        <ResturantCard resData={resList[1]} />
-        <ResturantCard resData={resList[2]} />
-        <ResturantCard resData={resList[3]} />
-        <ResturantCard resData={resList[4]} />
-        <ResturantCard resData={resList[5]} />
-        <ResturantCard resData={resList[6]} />
-        <ResturantCard resData={resList[7]} />
-        <ResturantCard resData={resList[8]} />
-        <ResturantCard resData={resList[9]} />
-        <ResturantCard resData={resList[10]} />
-        <ResturantCard resData={resList[11]} />
-        <ResturantCard resData={resList[12]} />
-        <ResturantCard resData={resList[13]} />
-        <ResturantCard resData={resList[14]} />
-        <ResturantCard resData={resList[15]} />
-        <ResturantCard resData={resList[16]} />
-        <ResturantCard resData={resList[17]} />
-        <ResturantCard resData={resList[18]} />
+      {
+        resList.map((resturant) => (
+        <ResturantCard key={resturant.info.id} resData={resturant}/>
+        ))}
         
       </div>
     </div>
