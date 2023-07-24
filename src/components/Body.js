@@ -1,5 +1,6 @@
 import ResturantCard from "./ResturantCard";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
   // local state variable
@@ -22,9 +23,9 @@ const Body = () => {
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
-  // Loading till data is fetching from api
+  // Conditiional Rendering-(Loading till data is fetching from api)
   if (listOfResturants.length === 0) {
-    return <h1>Loading...</h1>;
+    return <Shimmer />;
   }
   return (
     <div className="body">
