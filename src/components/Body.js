@@ -23,11 +23,9 @@ const Body = () => {
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
-  // Conditiional Rendering-(Loading till data is fetching from api)
-  if (listOfResturants.length === 0) {
-    return <Shimmer />;
-  }
-  return (
+  return listOfResturants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
