@@ -18,9 +18,14 @@ const Body = () => {
 
     console.log(json);
     setListOfResturant(
+      // optional chaining
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
   };
+  // Loading till data is fetching from api
+  if (listOfResturants.length === 0) {
+    return <h1>Loading...</h1>;
+  }
   return (
     <div className="body">
       <div className="filter">
