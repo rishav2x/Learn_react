@@ -2,16 +2,12 @@
     display: flex;
     justify-content: space-between;
     border: 1px solid black;
+    
 }
 
 .logo {
     width: 200px;
 }
-
-/*.cart-logo {
-    width: 75px;
-}
-*/
 
 .nav-items {
     padding: 0px 25px;
@@ -49,6 +45,7 @@
 .filter-btn {
     margin: 10px;
     cursor: pointer;
+    
 }
 
 .res-logo {
@@ -68,4 +65,12 @@
 
 .login {
     padding: 0 20px;
+}
+
+.filter {
+    display: flex;
+}
+
+.search-box {
+    margin-top: 10px;
 }
